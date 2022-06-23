@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog breedGroup Generator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div id="app">
+            <h1>{{title}}</h1>
+            <h2 class="breed">{{breed}}</h2>
+            <div class="img-container">
+                <img class="picture" :src="picture" alt="breed">
+            </div>  
+            <h4 class="temperament"><strong>Temperament:</strong>{{temperament}}</h4>
+            <p class="life-span"><strong>Lifespan:</strong> usually lives {{lifeSpan}}</p>
+            <p class="description"><strong>Description:</strong> <br>This dog was generally bred for {{breedFor}}</p>
+            <p class="weight">Weight: {{weight}} kg</p>
+            <p class="height">Height: {{height}} cm</p>
+            <h5 class="traits">Breed Group: <em>{{breedGroup}}</em></h5>
+            <button @click="getDog()">Generate</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
